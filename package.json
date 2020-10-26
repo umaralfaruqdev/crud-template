@@ -1,0 +1,13 @@
+{
+  "name": "Crud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -w scss/App.scss -o dist/css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,26 @@
+.table-container {
+    margin-top: 37px;
+
+    > .table-title {
+        margin-bottom: 35px;
+    }
+}
+
+.table tr td.nowrap {
+    white-space: nowrap;
+}
+
+// table counter
+.table-counter {
+  width: 80px;
+}
+
+// table actions
+.table-actions {
+    width: 150px;
+}
+
+// table hover
+.table-hover tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.045);
+}
