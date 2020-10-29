@@ -134,3 +134,14 @@ var modalEdit = function (elem) {
 
 }
 
+
+/**
+ * -------------------------------------------------------------------------
+ * Delete click
+ * -------------------------------------------------------------------------
+ */ 
+
+const deleteClick = function (id) {
+    let deleteConfirm = document.querySelector("#delete-confirm");
+    deleteConfirm.setAttribute("onclick", `deleteUser(${id})`)
+}
