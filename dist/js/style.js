@@ -4,7 +4,7 @@
  * -------------------------------------------------------------------------
  */ 
 
-var monthEl = document.querySelector("#month");
+var monthEl = document.querySelector("#born");
 
 // define month
 var monthes = ["January", 'February', "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -14,7 +14,7 @@ var month = function () {
     let monthStr = '';
 
     for (let i = 0; i < monthLength; i++) {
-        monthStr += `<option values="${i}">${monthes[i]}</option>`;
+        monthStr += `<option value="${i+1}">${monthes[i]}</option>`;
     }
 
     return monthStr;
@@ -109,7 +109,7 @@ var modalEdit = function (elem) {
             monthStr += `<option selected="true" values="${i}">${monthes[i]}</option>`;       
         } else {
             // if no is nothing
-            monthStr += `<option values="${i}">${monthes[i]}</option>`;
+            monthStr += `<option value="${i+1}">${monthes[i]}</option>`;
         }
     } // looping
 
