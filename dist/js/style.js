@@ -139,9 +139,15 @@ var modalEdit = function (elem) {
  * -------------------------------------------------------------------------
  * Delete click
  * -------------------------------------------------------------------------
- */ 
+ */
+const _DELETE_MODAL = document.querySelector("#deleteModal");
+const _DELETE_MODAL_BODY = _DELETE_MODAL.querySelector(".modal-body");
+
 
 const deleteClick = function (id) {
+
+    _DELETE_MODAL_BODY.innerHTML = "Are you sure want to delete it?";
+
     let deleteConfirm = document.querySelector("#delete-confirm");
     deleteConfirm.setAttribute("onclick", `deleteUser(${id})`)
 }
